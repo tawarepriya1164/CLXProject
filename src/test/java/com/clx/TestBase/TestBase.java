@@ -18,6 +18,7 @@ import com.clx.Utility.ExcelReader;
 public class TestBase {
 	public WebDriver driver;
 	public static Properties prop = new Properties();
+	public ExcelReader excelReader;
 	
 	@BeforeClass
 	@Parameters("browser")
@@ -51,12 +52,14 @@ public class TestBase {
 		prop.load(fis);
 		
 	}
-	public String[][] getData(String Login,String sheetName, ExcelReader excelReader) throws IOException 
+	public Object[][] getData(String sheetName, String excelName) throws IOException 
 	{
-		String excelLocation=System.getProperty("user.dir")+"\\src\\test\\java\\com\\clx\\testData\\"+Login+".xlsx";
+		String excelLocation=System.getProperty("user.dir")+"\\src\\test\\java\\com\\clx\\testData\\"+excelName+".xlsx";
 		excelReader=new ExcelReader();
 		return ExcelReader.getExcelData(excelLocation, sheetName);
-	}
+		}
+	
+	
 	/*@AfterClass
 	public void tearDown()
 	{

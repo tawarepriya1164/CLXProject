@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5686" started-at="2019-01-16T12:13:18Z" finished-at="2019-01-16T12:13:23Z">
+  <suite name="Suite" duration-ms="26024" started-at="2019-01-23T09:45:38Z" finished-at="2019-01-23T09:46:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="5686" started-at="2019-01-16T12:13:18Z" finished-at="2019-01-16T12:13:23Z">
+    <test name="Test" duration-ms="26024" started-at="2019-01-23T09:45:38Z" finished-at="2019-01-23T09:46:05Z">
       <class name="com.clx.Test.LoginTest.LoginTest">
-        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@f5ac9e4]" name="initialization" is-config="true" duration-ms="5620" started-at="2019-01-16T12:13:18Z" finished-at="2019-01-16T12:13:23Z">
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="initialization" is-config="true" duration-ms="17834" started-at="2019-01-23T04:45:38Z" finished-at="2019-01-23T04:45:56Z">
           <params>
             <param index="0">
               <value>
@@ -18,43 +18,95 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="FAIL" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@f5ac9e4]" name="TC_01" duration-ms="0" started-at="2019-01-16T12:13:23Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-16T12:13:23Z">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Some DataProvider public java.lang.Object[][] com.clx.Test.LoginTest.LoginTest.LoginData(java.lang.String) throws java.io.IOException parameters unresolved:  at 0 type class java.lang.String
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Some DataProvider public java.lang.Object[][] com.clx.Test.LoginTest.LoginTest.LoginData(java.lang.String) throws java.io.IOException parameters unresolved:  at 0 type class java.lang.String
-
-at org.testng.internal.MethodInvocationHelper.getParameters(MethodInvocationHelper.java:197)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:130)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:923)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1045" started-at="2019-01-23T04:45:57Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:45:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kp24@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1280" started-at="2019-01-23T04:45:58Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:45:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lexvia#2015]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1208" started-at="2019-01-23T04:45:59Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kp24@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lexvia#2016]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1250" started-at="2019-01-23T04:46:01Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kp224@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lexvia#2015]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1160" started-at="2019-01-23T04:46:02Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kp224@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lexvia#2016]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1449" started-at="2019-01-23T04:46:03Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kp24@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lexvia#2015]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->

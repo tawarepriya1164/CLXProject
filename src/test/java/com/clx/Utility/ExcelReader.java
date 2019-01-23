@@ -12,19 +12,19 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.clx.TestBase.TestBase;
 public class ExcelReader {
-	public Object[][] getExcelData(String excelLocation,String  sheetName) throws IOException 
+	public static Object[][] getExcelData(String excelLocation,String  sheetName) throws IOException 
 	{
 		try {
 			String dataSets[][]=null;
 			FileInputStream file=new FileInputStream(new File(excelLocation));
 			XSSFWorkbook worbook=new XSSFWorkbook(file);
-			XSSFSheet sheet=worbook.getSheet(sheetName);
+			XSSFSheet sheet=worbook.getSheet("Sheet1");
 
 			//count number of active rows
 			int totalRow=sheet.getLastRowNum()+1;
 
 			//count number of active columns
-			int totalColumn=sheet.getRow(0).getLastCellNum();
+			int totalColumn=sheet.getRow(0).getLastCellNum(); 
 
 			//create array of rows and columns
 			dataSets=new String[totalRow-1][totalColumn];

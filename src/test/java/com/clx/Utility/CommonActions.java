@@ -11,7 +11,8 @@ public class CommonActions {
 	}
 	public void enterText(WebElement ele,String value)
 	{
-		ele.sendKeys(value);
+		if (value != null)
+			ele.sendKeys(value);
 	}
 	public void clearText(WebElement ele)
 	{

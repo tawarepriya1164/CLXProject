@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26024" started-at="2019-01-23T09:45:38Z" finished-at="2019-01-23T09:46:05Z">
+  <suite name="Suite" duration-ms="258510" started-at="2019-02-02T06:53:56Z" finished-at="2019-02-02T06:58:15Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="26024" started-at="2019-01-23T09:45:38Z" finished-at="2019-01-23T09:46:05Z">
+    <test name="Test" duration-ms="258510" started-at="2019-02-02T06:53:56Z" finished-at="2019-02-02T06:58:15Z">
       <class name="com.clx.Test.LoginTest.LoginTest">
-        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="initialization" is-config="true" duration-ms="17834" started-at="2019-01-23T04:45:38Z" finished-at="2019-01-23T04:45:56Z">
+        <test-method status="PASS" signature="initialization(java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@2e4b8173]" name="initialization" is-config="true" duration-ms="32681" started-at="2019-02-02T12:23:56Z" finished-at="2019-02-02T12:24:29Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1045" started-at="2019-01-23T04:45:57Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:45:58Z">
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@2e4b8173]" name="TC_01" duration-ms="20497" started-at="2019-02-02T12:24:37Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-02-02T12:24:58Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1280" started-at="2019-01-23T04:45:58Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:45:59Z">
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@2e4b8173]" name="TC_01" duration-ms="49961" started-at="2019-02-02T12:24:58Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-02-02T12:25:47Z">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1208" started-at="2019-01-23T04:45:59Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:01Z">
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@2e4b8173]" name="TC_01" duration-ms="42069" started-at="2019-02-02T12:25:48Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-02-02T12:26:30Z">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1250" started-at="2019-01-23T04:46:01Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:02Z">
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@2e4b8173]" name="TC_01" duration-ms="25974" started-at="2019-02-02T12:26:30Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-02-02T12:26:56Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1160" started-at="2019-01-23T04:46:02Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:03Z">
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@2e4b8173]" name="TC_01" duration-ms="9883" started-at="2019-02-02T12:26:56Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-02-02T12:27:05Z">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@7d9d1a19]" name="TC_01" duration-ms="1449" started-at="2019-01-23T04:46:03Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-01-23T04:46:04Z">
+        <test-method status="PASS" signature="TC_01(java.lang.String, java.lang.String)[pri:0, instance:com.clx.Test.LoginTest.LoginTest@2e4b8173]" name="TC_01" duration-ms="69176" started-at="2019-02-02T12:27:05Z" description=" Login with valid username and valid password" data-provider="Login" finished-at="2019-02-02T12:28:15Z">
           <params>
             <param index="0">
               <value>

@@ -68,6 +68,10 @@ public class ExcelReader {
 						case Cell.CELL_TYPE_FORMULA:
 							dataSets[k][j++]=cell.getStringCellValue();
 							break;
+
+						case Cell.CELL_TYPE_BLANK:
+							dataSets[k][j++]=cell.getStringCellValue();
+							break;
 						}
 					}
 				}

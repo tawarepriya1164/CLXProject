@@ -14,9 +14,27 @@ public class CommonActions {
 		if (value != null)
 			ele.sendKeys(value);
 	}
-	public void clearText(WebElement ele)
+	public void clearText(WebElement ele,String value)
 	{
-		ele.clear();
+		if(value==null)
+		{
+			System.out.println("empty box");
+		}
+		else
+		{
+		ele.clear(); 
+		}
+	}
+	public boolean isElementIsDisplyed(WebElement element)
+	{
+		try {
+			element.isDisplayed();
+			return true;
+			
+		} catch (Exception e) {
+			return false;
+		}
+		
 	}
 	public void click(WebElement ele)
 	{

@@ -10,15 +10,12 @@ public class SoftAsserts {
 		asserts.assertAll();
 
 	}
-	public String performSoftAsserts(String actual,String expected)
+	public void performSoftAsserts(String actual,String expected)
 	{
 		SoftAssert asserts = new SoftAssert();
 		asserts.assertEquals(actual, expected);
 		asserts.assertAll();
-		return expected;
-		
-
 
 	}
-	
+
 }

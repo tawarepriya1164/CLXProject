@@ -28,11 +28,6 @@ public class LoginPage extends TestBase{
 		commonActions.enterText(loginObject.getUserName, userName);
 		commonActions.enterText(loginObject.getPassWord, passWord);
 		commonActions.click(loginObject.getLoginBtn);
-		driver.manage().timeouts().pageLoadTimeout(10000, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(100000, TimeUnit.SECONDS);
-		driver.navigate().refresh();
-		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
-		
 	}
 	public void verifyHomePage(String expectedTitle)
 	{
@@ -40,15 +35,12 @@ public class LoginPage extends TestBase{
 		String actualTitle = driver.getTitle();
 		new SoftAsserts().performSoftAsserts(actualTitle, expectedTitle);
 	}
-	
+
 	public void verifyErrorMessage(ErrorMessage ermsg)
 	{
-		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
-		
-		
-		//String actualErrorMessage = 
-				
-				new SoftAsserts().performSoftAsserts(actualErrorMessage, ermsg.getText());
+		//driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+		String actualErrorMessage = loginObject.getErrorMessage.getText();
+		new SoftAsserts().performSoftAsserts(actualErrorMessage, ermsg.getText());
 	}
-	
+
 }

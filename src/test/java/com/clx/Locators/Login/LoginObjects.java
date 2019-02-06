@@ -16,6 +16,7 @@ public class LoginObjects extends TestBase{
 	@FindBy(id = "exampleInputEmail1") public WebElement getUserName;
 	@FindBy(id = "exampleInputPassword1") public WebElement getPassWord;
 	@FindBy(xpath = "//input[@type = 'submit']") public WebElement getLoginBtn;
+	@FindBy(xpath = " //body/div[3]") public WebElement getErrorMessage;
 }
 
 

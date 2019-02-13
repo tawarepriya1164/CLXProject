@@ -18,7 +18,7 @@ public class ExcelReader {
 			String dataSets[][]=null;
 			FileInputStream file=new FileInputStream(new File(excelLocation));
 			XSSFWorkbook worbook=new XSSFWorkbook(file);
-			XSSFSheet sheet=worbook.getSheet("Sheet1");
+			XSSFSheet sheet=worbook.getSheet("Login");
 
 			//count number of active rows
 			int totalRow=sheet.getLastRowNum()+1;

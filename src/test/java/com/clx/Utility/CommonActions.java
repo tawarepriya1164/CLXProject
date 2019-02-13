@@ -25,6 +25,11 @@ public class CommonActions {
 		ele.clear(); 
 		}
 	}
+	public void enterTextByClearingExisting(WebElement ele,String value)
+	{
+		ele.clear();
+		ele.sendKeys(value);
+	}
 	public boolean isElementIsDisplyed(WebElement element)
 	{
 		try {

@@ -14,7 +14,7 @@ public class SpinnerHandle {
 	}
 	public void waitForSpinnerRemoved() throws Exception
 	{
-		String spinnerImageXpath = driver.findElement(By.xpath("lexvia-loader ng-isolate-scope"));
+	String spinnerImageXpath = driver.findElement(By.xpath("lexvia-loader ng-isolate-scope"));
 		// actualSpinnerImageXpath=spinnerImageXpath.split("__")[1];
 
 		List<WebElement> spinnerImage = driver.findElements(By.xpath(spinnerImageXpath));

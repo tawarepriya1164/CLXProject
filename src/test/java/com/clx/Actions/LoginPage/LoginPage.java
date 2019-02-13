@@ -3,14 +3,10 @@ package com.clx.Actions.LoginPage;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.asserts.SoftAssert;
-
 import com.clx.Locators.Login.LoginObjects;
 import com.clx.TestBase.TestBase;
 import com.clx.Utility.CommonActions;
 import com.clx.Utility.SoftAsserts;
-import com.clx.Utility.Enum.ErrorMessages;
-import com.clx.Utility.Enum.ErrorMessages.ErrorMessage;
 
 public class LoginPage extends TestBase{
 	WebDriver driver;
@@ -25,22 +21,35 @@ public class LoginPage extends TestBase{
 
 	public void loginToApplication(String userName, String passWord)
 	{
-		commonActions.enterText(loginObject.getUserName, userName);
-		commonActions.enterText(loginObject.getPassWord, passWord);
+		String un = userName;
+		String pwd = passWord;
+		if(userName.contains("null"))
+			un="";
+		if(passWord.contains("null"))
+			pwd="";
+
+		commonActions.enterTextByClearingExisting(loginObject.getUserName, un);
+		commonActions.enterTextByClearingExisting(loginObject.getPassWord, pwd);
 		commonActions.click(loginObject.getLoginBtn);
+		driver.manage().timeouts().implicitlyWait(30000, TimeUnit.SECONDS);
 	}
 	public void verifyHomePage(String expectedTitle)
 	{
-		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
 		String actualTitle = driver.getTitle();
 		new SoftAsserts().performSoftAsserts(actualTitle, expectedTitle);
 	}
 
-	public void verifyErrorMessage(ErrorMessage ermsg)
+	public void verifyErrorMessage(String ermsg)
 	{
-		//driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
-		String actualErrorMessage = loginObject.getErrorMessage.getText();
-		new SoftAsserts().performSoftAsserts(actualErrorMessage, ermsg.getText());
+		if(ermsg.contains("Welcome"))
+			verifyHomePage(ermsg);
+		else
+		{
+			String actualErrorMessage = loginObject.getErrorMessage.getText();
+			new SoftAsserts().performSoftAsserts(actualErrorMessage, ermsg);
+		}	
+
 	}
+
 
 }

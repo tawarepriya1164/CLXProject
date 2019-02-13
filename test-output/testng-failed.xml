@@ -10,7 +10,7 @@
       <class name="com.clx.Test.LoginTest.LoginTest">
         <methods>
           <include name="initialization"/>
-          <include name="TC_01" invocation-numbers="1 2 3 4 5"/>
+          <include name="TC_01" invocation-numbers="0 1 2 3 4"/>
         </methods>
       </class> <!-- com.clx.Test.LoginTest.LoginTest -->
     </classes>
